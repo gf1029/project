@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="shortcut icon" href="" type="img/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
+        }
+
+        .container {
+        background-color: #fff;
+        padding: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+        background-image: url('img/image.png');
+        background-size: cover; 
+        background-position: center; 
+        text-align: center;
+
+        font-family: monospace;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        p {
+            color: #777;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #000000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 50px;
+
+        }
+
+        .button:hover {
+            background-color: #797979;
+        }
+
+        .image {
+            position: fixed;
+            right: 5%;
+            margin-top: 5%;
+
+            transform: perspective(360px) rotateX(360deg) rotateY(0deg) scale(1);
+            transition: transform 0.5s ease;
+        }
+
+        .button2 {
+            font-family: monospace;
+            position: fixed;
+
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #000000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            border-style: none;
+
+            margin-left: 450px;
+            margin-top: 230px;
+
+            color: #777;
+            line-height: 1.6;
+        }
+
+        .button1 {
+            position: fixed;
+            font-family: monospace;
+
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #000000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            border-style: none;
+
+            margin-left: 300px;
+            margin-top: 230px;
+
+            color: #777;
+            line-height: 1.6;
+        }
+
+
+        .image:hover{
+            transform: perspective(200px) rotateX(0deg) rotateY(1deg) scale(1);
+            transition: transform 0.5s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Python</h1>
+        <p>
+            This website provides a comprehensive guide to learning Python from scratch.
+            The lessons cover a wide range of topics, including syntax, data structures, and algorithms.
+            We believe that anyone with basic programming knowledge can easily understand and apply these concepts.
+        </p>
+        <p>
+            Сайту было выделенно 4 часа. 🉐 
+        </p>
+        <a href="https://t.me/Coqid" class="button">Start Learning</a>
+
+        <img class="image" height="160" width="383" src="img/2.png">
+
+        <script>
+            var sound;
+             
+            function playSound() {
+               sound = new Audio("music/Lil_Revive_-_GRIM_PEAKS_66526568.mp3");
+               sound.play();
+            }
+             
+            function stopSound() {
+               sound.pause();
+            }
+
+           </script>
+
+           <button class="button1" onclick="playSound()">Play</button>
+           <button class="button2" onclick="stopSound()">Stop</button>
+
+    </div>
+</body>
+</html>
